@@ -22,4 +22,4 @@ Users should be able to:
 - Javascript
 - Responsive Design
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/MaxP29)
+- Frontend Mentor - [@MaxP29](https://www.frontendmentor.io/profile/MaxP29)
