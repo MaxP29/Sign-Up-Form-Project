@@ -255,8 +255,8 @@ span {
 /* iPhone 13 Pro Max */
 @media (max-width: 26em) {
   .container {
-    margin-left: -3rem;
-    margin-right: 3rem;
+    margin-left: -2rem;
+    margin-right: 8rem;
   }
 }
 
