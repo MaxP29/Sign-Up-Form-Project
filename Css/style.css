@@ -193,12 +193,12 @@ span {
 /* 600px */
 @media (max-width: 37.5em) {
   .container {
-    margin-left: -1.5rem;
     align-items: start;
-    justify-content: auto;
+    justify-content: center;
   }
 
   .cards {
+    justify-content: center;
     grid-template-columns: 1fr;
   }
 
@@ -272,10 +272,8 @@ span {
   }
 
   .container {
-    margin-left: 1.8rem;
-    display: block;
     align-items: start;
-    justify-content: auto;
+    justify-content: center;
   }
 
   .input {
