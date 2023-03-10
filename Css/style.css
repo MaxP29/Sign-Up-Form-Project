@@ -67,7 +67,7 @@ body {
   margin-top: 2rem;
   background-color: #fff;
   border-radius: 1.2rem;
-  padding: 4rem 3rem 3rem 3rem;
+  padding: 4rem 3rem 4rem 3rem;
   box-shadow: 0 0.8rem 0.2rem 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -85,6 +85,12 @@ strong {
   color: #fff;
 }
 
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .input {
   padding: 1.8rem 28rem 1.8rem 3rem;
   border-radius: 0.4rem;
@@ -93,12 +99,14 @@ strong {
   color: hsl(249, 10%, 26%);
   font-weight: 600;
   caret-color: hsl(248, 32%, 49%);
+  outline-offset: -1px;
 }
 
 .input:active,
 .input:hover {
   background-color: none;
   outline: 0.1rem solid hsl(248, 32%, 49%, 0.8);
+  border-radius: 0.5rem;
 }
 
 .claim {
@@ -108,7 +116,7 @@ strong {
   padding: 2rem 16rem;
   color: #fff;
   border-radius: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.8px;
@@ -141,7 +149,7 @@ span {
   font-size: 1.2rem;
   font-weight: 500;
   color: hsl(0, 100%, 74%, 0.9);
-  margin-top: 1rem;
+  margin-right: -30rem;
   justify-content: right;
   font-style: italic;
 }
@@ -152,9 +160,7 @@ span {
 
 .icons {
   display: none;
-  position: absolute;
-  right: 14%;
-  margin-top: -4rem;
+  margin-left: -3rem;
 }
 
 /* Small Laptop */
@@ -178,12 +184,16 @@ span {
   .icons {
     right: 15%;
   }
+
+  .error-text {
+    padding-right: 16rem;
+  }
 }
 
 /* 600px */
 @media (max-width: 37.5em) {
   .container {
-    margin: auto;
+    margin-left: -1.5rem;
     align-items: start;
     justify-content: auto;
   }
@@ -206,18 +216,25 @@ span {
   }
 
   .claim {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     padding: 2rem 11.4rem 2rem 12rem;
   }
 
   .form {
     margin-bottom: 8rem;
   }
+
+  .error-text {
+    padding-left: 12rem;
+  }
 }
 
-/* Larger Phones */
+/* Larger Phones 430px */
 
 @media (max-width: 27em) {
+  .container {
+    margin-left: -2rem;
+  }
   .icons {
     right: 18%;
   }
@@ -227,7 +244,11 @@ span {
   }
 
   .input {
-    padding: 2rem 8rem 2rem 3rem;
+    padding: 2rem 11rem 2rem 3rem;
+  }
+
+  .error-text {
+    padding-left: 0;
   }
 }
 
@@ -240,74 +261,14 @@ span {
   }
 
   .container {
+    margin-left: 1.8rem;
     display: block;
     align-items: start;
     justify-content: auto;
   }
 
-  .heading {
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 6rem;
-    line-height: 1.5;
-    margin-bottom: 2rem;
-  }
-
-  .description {
-    margin: 0 2rem 3rem 2rem;
-    text-align: center;
-  }
-
-  .left {
-    margin: 0;
-  }
-
-  .form {
-    padding: 0rem;
-    margin: 2rem;
-    gap: 0.2rem;
-    margin-bottom: 8rem;
-  }
-
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
-  .claim {
-    font-size: 1.4rem;
-    margin-top: 1.5rem;
-    padding: 2rem 5rem;
-    margin-bottom: 1rem;
-  }
-
   .input {
-    font-size: 1.4rem;
-    padding: 1.8rem 10rem 1.8rem 3rem;
-    margin: 2rem 2rem 0rem 2rem;
+    padding-left: 1rem;
+    padding-right: 10rem;
   }
-
-  .terms {
-    font-size: 1.1rem;
-    text-align: center;
-    margin: 0rem 2.3rem 2rem 3rem;
-  }
-
-  .seven-days {
-    font-size: 1.8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 1.5;
-    margin: 4rem 2rem 1rem 2rem;
-    padding: 2rem 2rem;
-  }
-
-  .error-text {
-    margin-right: 2rem;
-  }
-
-  .icons {
-    right: 18%;
-    margin-top: -4rem;
-  }
-} ;
+}
