@@ -255,7 +255,7 @@ span {
 /* iPhone 13 Pro Max */
 @media (max-width: 26em) {
   .container {
-
+  justify-content: left;
 
   }
 }
