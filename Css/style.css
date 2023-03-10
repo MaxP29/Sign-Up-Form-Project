@@ -253,9 +253,13 @@ span {
 }
 
 /* iPhone 13 Pro Max */
-@media (max-width: 26em) {
+@media (max-width: 428px) {
   .container {
-  width: fit-content;
+    margin-left: 0;
+  }
+
+  .cards {
+    justify-content: center;
   }
 }
 
