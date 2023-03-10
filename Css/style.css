@@ -256,7 +256,7 @@ span {
 @media (max-width: 26em) {
   .container {
     margin-left: -2rem;
-    margin-right: 8rem;
+    margin-right: 20rem;
   }
 }
 
